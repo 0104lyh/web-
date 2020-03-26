@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>作业2</title>
+<style type="text/css">
+body {
+	margin: 0;
+    padding: 0;
+  	font-family: "montserrat",sans-serif;
+  	background: #000;
+	background-image: url(image/main_bg.png);
+	background-size: cover;
+	background-attachment:fixed;
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: sans-serif;
+	font: Arial 12px #FFF;
+	background-repeat: repeat-x;
+	margin: 0px; */
+}
+#main {
+	/* background-color: black; */
+	background-repeat: repeat;
+	height: 1000px;
+	width: 1520px;
+}
+#logo {
+	margin-top: 0px;
+	margin-left: 650px;
+}
+#nav{
+	background:rgba(140, 136, 218, 0.507);
+	width:580px;
+	height:40px;
+	margin-left:465px;
+	margin-top:0px;
+	color: #FFFFFF;
+	vertical-align: top;
+	border: 1px solid #D1BCF3;
+	/* opacity: 0.5; */
+}
+#nav ul{
+	list-style-type:none;
+	margin:0px;
+
+}
+#nav li {
+	font-family: "宋体" 15px bold;
+	height: 26px;
+	width: 95px;
+	padding-top: 10px;
+	text-align:center;
+	vertical-align:middle;
+	float: left;
+}
+#nav a:link, #nav a:visited {
+	/* font: "宋体" 15px bold rgb(28, 236, 9); */
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	margin: -10px;
+	padding: 10px;
+	height: 30px;
+	width: 95px;
+}
+#nav a:hover {
+	font: "宋体" 15px bold rgb(255, 0, 0);
+	text-decoration: none;
+	background-color: rgba(106, 176, 209, 0.692);
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	margin: -10px;
+	padding: 10px;
+	height: 20px;
+	width: 95px;
+	
+}
+.content_nr{
+	padding: 10px;
+	width: 780px;
+	margin: 50px auto;/*上下边距为50像素,左右自动扩展*/
+	border: 2px solid rgba(36, 243, 191, 0.486);/*颜色为蓝色的2像素实线*/
+	background-color:rgba(99, 140, 216, 0.521); /*背景色为白色*/
+	/* opacity: 0.5; */
+}
+
+</style>
+</head>
+
+<body>
+<div id="main">
+  <div id="nav">
+  <ul>
+  <li><a href="index.html">网站首页</a></li>
+  <li><a href="about.html">关于我们</a></li>
+  <li><a href="news.html">网站新闻</a></li>
+  <li><a href="show.html">作品展示</a></li>
+  <li><a href="message.html">站内留言</a></li>
+  </ul>
+</div>
+	<div class="content_nr">
+	<h2>Gridea搭建的个人博客</h2>
+	<img src="image/blog.jpg" width="780" height="480/">
+  </div>
+</div>
+<div class="waifu">
+	<div class="waifu-tips"></div>
+	<canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+	<div class="waifu-tool">
+		<span class="fui-home"></span>
+		<span class="fui-chat"></span>
+		<span class="fui-eye"></span>
+		<span class="fui-user"></span>
+		<span class="fui-photo"></span>
+		<span class="fui-info-circle"></span>
+		<span class="fui-cross"></span>
+	</div>
+</div>
+	
+<script src="assets/waifu-tips.js"></script>
+<script src="assets/live2d.js"></script>
+<script type="text/javascript">initModel("assets/")</script>
+</body>
+</html>
